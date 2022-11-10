@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <style>
+        body {
+            background: rgb(17, 17, 17);
+        }
+         
+        .image-slider {
+            margin-left: 3rem;
+            position: relative;
+            display: inline-block;
+            line-height: 0;
+        }
+         
+        .image-slider img {
+            user-select: none;
+            max-width: 400px;
+        }
+         
+        .image-slider > div {
+            position: absolute;
+            width: 25px;
+            max-width: 100%;
+            overflow: hidden;
+            resize: horizontal;
+        }
+         
+        .image-slider > div:before {
+            content: '';
+            display: block;
+            width: 13px;
+            height: 13px;
+            overflow: hidden;
+            position: absolute;
+            resize: horizontal;
+            right: 3px;
+            bottom: 3px;
+            background-clip: content-box;
+            background: linear-gradient(-45deg, black 50%, transparent 0);
+            -webkit-filter: drop-shadow(0 0 2px black);
+            filter: drop-shadow(0 0 2px black);
+        }
+    </style>
+</head>
+ 
+<body>
+    <div style="margin: 3rem;
+                font-family: Roboto, sans-serif">
+    </div>
+    <div>
+        <div class="image-slider">
+            <div>
+                <img src=
+"" <!-- Enter the directory for your first image here -->
+                     />
+            </div>
+                <img src=
+"" <!-- Enter the directory for you second image here -->
+                    />
+        </div>
+    </div>
+</body>
+</html>
