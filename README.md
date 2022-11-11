@@ -5,7 +5,7 @@ This repository is a work in progress, but ultimately seeks to provide cultural 
 
 VERSION 1.0
 
-1. ImageResizerFiles
+**ImageResizerFiles**
 
 The files in the ImageResizerFiles folder accept a folder of images and a destination directory as input and return a resized version of the original files with the prefix "resized_" before the original file name to save in the destination directory. The images are resized based on the dimensions of the lowest pixel resolution of the original dataset (because different cameras for different hyperspectral data result in different resolutions among the images). 
 
@@ -15,7 +15,8 @@ To use these files:
 3. Another popup window will appear to ask for the destination directory. For reasons I don't understand and I did not code personally, tkinter likes to save these images a directory *above* the one selected. To deal with this issue locally, I made two destination directory folders, one inside of the other, with the same name and click on the inside folder so the files are saved to the outside folder. Since I'm pretty new to user interfaces, this might be a trial-and-error process for everyone involved.
 4. The code now has enough information to run. The terminal will print out the dimensions of all of the input images and indicate the smallest dimensions, and then your resized images will be available in the directory above the directory selected for these images. 
 
-2. slidertool
+
+**slidertool**
 
 The index script inside this folder takes two images as input and superimposes the images with a slider tool for easy comparison.
 
@@ -24,7 +25,7 @@ To use these files:
 2. I use a VSCode extension called "Live Server" to display the images locally in real time. I highly recommend this method. I simply right-click "open in live server" and the slider tool is ready to use! 
 3. In order to change the images in the slider tool, simply change the file paths.
 
-3. imagepoints
+**imagepoints**
  
 checkpoints.py visualizes a set of points indicated in the script. markpoints.py allows a user to click on an image and displays the (x,y) coordinates of the selected point.
 
