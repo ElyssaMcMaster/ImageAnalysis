@@ -21,7 +21,7 @@ for item in image_list:
     if item.size < savedims:
         savedims = item.size
 
-#print(savedims)
+print("The size of all the images will be ", savedims)
 
 for image in image_list:
     #image.show()
