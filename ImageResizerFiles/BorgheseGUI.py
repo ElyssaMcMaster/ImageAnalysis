@@ -1,8 +1,9 @@
+import tkinter as tk
 from tkinter import messagebox
-from tkinter import ttk
-
-
 from tkinter.filedialog import askdirectory
+
+root=tk.Tk()
+root.withdraw()
 
 print("select the folder of images to resize them")
 path1 = askdirectory()
