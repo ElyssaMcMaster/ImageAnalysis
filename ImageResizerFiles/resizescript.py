@@ -9,6 +9,7 @@ resized_images = []
 image_names=[]
 shortimagenames=[]
 
+print(BorgheseGUI.filetype)
 
 # function here to get file type
 for filename in glob.glob(BorgheseGUI.path1 + "/*"+str(BorgheseGUI.filetype)):
@@ -41,7 +42,12 @@ for item in image_names:
 
 print(shortimagenames)
 
-for (i, new) in enumerate(resized_images):
-    new.save('{}{}{}'.format(BorgheseGUI.path2, shortimagenames[i], '_resized.tif'))
-    i+=1
 
+if BorgheseGUI.filetype == '.jpg':
+    for (i, new) in enumerate(resized_images):
+        new.save('{}{}{}'.format(BorgheseGUI.path2, shortimagenames[i], '_resized.jpg'))
+        i+=1
+else:
+    for (i, new) in enumerate(resized_images):
+        new.save('{}{}{}'.format(BorgheseGUI.path2, shortimagenames[i], '_resized.tif'))
+        i+=1

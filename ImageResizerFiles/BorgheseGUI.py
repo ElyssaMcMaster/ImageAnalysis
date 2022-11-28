@@ -20,6 +20,7 @@ tifbutton.pack()
 def picktif():
     # output message to terminal to show button is working
     print("tif selected")
+    global filetype
     filetype = '.tif'
     root.destroy()
     return filetype
@@ -27,10 +28,12 @@ def picktif():
 
 def pickjpg():
     print('jpg selected')
+    global filetype
     filetype = '.jpg'
     root.destroy()
     return filetype
     
+
 print(filetype)
 
 
