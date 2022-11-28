@@ -11,9 +11,10 @@ The files in the ImageResizerFiles folder accept a folder of images and a destin
 
 To use these files:
 1. Run the main.py file
-2. A popup window will appear to ask for the directory of the images you wish to input. Navigate to the folder of images you wish to resize and click submit.
-3. Another popup window will appear to ask for the destination directory. For reasons I don't understand and I did not code personally, tkinter likes to save these images a directory *above* the one selected. To deal with this issue locally, I made two destination directory folders, one inside of the other, with the same name and click on the inside folder so the files are saved to the outside folder. Since I'm pretty new to user interfaces, this might be a trial-and-error process for everyone involved.
-4. The code now has enough information to run. The terminal will print out the dimensions of all of the input images and indicate the smallest dimensions, and then your resized images will be available in the directory above the directory selected for these images. 
+2. A popup window with buttons will appear to ask for the filetype of the images you would like to resize. This feature supports .jpg and .tif file types, but can support more if desired. This way, only specific image types will be pulled from folders that could have many image types. The user will just have to click on one of these buttons one time.
+3. A popup window will appear to ask for the directory of the images you wish to input. Navigate to the folder of images you wish to resize and click submit. Folders with multiple file types will be filtered to only resize the original filetype.
+4. Another popup window will appear to ask for the destination directory. For reasons I don't understand and I did not code personally, tkinter likes to save these images a directory *above* the one selected. To deal with this issue locally, I made two destination directory folders, one inside of the other, with the same name and click on the inside folder so the files are saved to the outside folder. Since I'm pretty new to user interfaces, this might be a trial-and-error process for everyone involved.
+5. The code now has enough information to run. The terminal will print out the dimensions of all of the input images and indicate the smallest dimensions, and then your resized images will be available in the directory above the directory selected for these images. 
 
 
 **slidertool**
