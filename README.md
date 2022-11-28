@@ -3,7 +3,7 @@
 
 This repository is a work in progress, but ultimately seeks to provide cultural heritage scientists with safe, free, and easy-to-use technology to accomplish tasks that could otherwise involve unsecured websites or expensive/inaccessible programs.
 
-VERSION 1.0
+VERSION 1.1
 
 **ImageResizerFiles**
 
