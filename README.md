@@ -7,7 +7,7 @@ VERSION 1.0
 
 **ImageResizerFiles**
 
-The files in the ImageResizerFiles folder accept a folder of images and a destination directory as input and return a resized version of the original files with the prefix "resized_" before the original file name to save in the destination directory. This feature isn't working yet but I'm trying. The images are resized based on the dimensions of the lowest pixel resolution of the original dataset (because different cameras for different hyperspectral data result in different resolutions among the images). 
+The files in the ImageResizerFiles folder accept a folder of images and a destination directory as input and return a resized version of the original files with the prefix "resized_" before the original file name to save in the destination directory. The images are resized based on the dimensions of the lowest pixel resolution of the original dataset (because different cameras for different hyperspectral data result in different resolutions among the images). 
 
 To use these files:
 1. Run the main.py file
