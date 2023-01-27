@@ -2,7 +2,7 @@ from PIL import Image
 import glob
 import BorgheseGUI
 
-
+Image.MAX_IMAGE_PIXELS = None
 
 image_list = []
 resized_images = []
@@ -51,3 +51,4 @@ else:
     for (i, new) in enumerate(resized_images):
         new.save('{}{}{}'.format(BorgheseGUI.path2, shortimagenames[i], '_resized.tif'))
         i+=1
+
